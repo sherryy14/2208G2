@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="file.css" type="text/css"?>
+<menu>
+    <item category='fast food'>
+        <food>Burger</food>
+        <price>999</price>
+        <rating>5</rating>
+    </item>
+    <item category='italian food'>
+        <food>Pizza</food>
+        <price>564</price>
+        <rating>4.9</rating>
+    </item>
+    <item category='desi food'>
+        <food>Biryani</food>
+        <price>100</price>
+        <rating>3</rating>
+    </item>
+</menu>

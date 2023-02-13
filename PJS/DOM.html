@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.container{
+        background-color: aqua;
+    }
+</style>
+
+<body>
+
+    <h1 class="container">Hello World</h1>
+    <div class="container">Hello World1</div>
+
+    <ul id="ul">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+
+    <input type="text" name="" id="txt"> 
+    <button id="btn">Add</button>
+    <ol>
+
+    </ol>
+    <button id="btn1">Button</button>
+    <script>
+        const a =document.querySelectorAll('div.container')[0]
+        console.log(a.textContent)  // Used as innerText
+
+        const divTag = document.createElement('div')
+        const divTxt = document.createTextNode('New div has been created')
+        console.log(divTag.appendChild(divTxt))
+        // a.append(divTag.appendChild(divTxt))
+
+        // a.removeChild(divTxt)
+
+
+        // ul.style.backgroundColor = 'red'
+
+        document.getElementById('btn').addEventListener('click',()=>{
+            const val = document.querySelectorAll('#txt')[0].value;
+            const ol = document.getElementsByTagName('ol')[0]
+            const li = document.createElement('li')
+           const txt = document.createTextNode(val)
+            
+          const gettxt = li.appendChild(txt)
+            console.log(gettxt)
+                ol.appendChild(gettxt)
+        })
+        document.getElementById('btn1').addEventListener('click',()=>{
+            let a =''
+            let val = document.getElementById('txt').value;
+
+            let ol = document.getElementsByTagName('ol')[0]
+            ol.innerHTML += `<li>${val}</li>` 
+
+        })
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #p1 {
+       
+    animation-duration: 3s;
+
+    animation-name: slidein;
+    }
+
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+    }
+
+    #p2 {
+        animation-duration: 3s;
+        
+        animation-name: slideinzoom;
+    }
+
+    @keyframes slideinzoom {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+    }
+</style>
+<body>
+    <p id="p1">Lorem, ipsum `dolor sit amet consectetur adipisicing elit. Sapiente iste aut nostrum. Debitis a tenetur quas rem non vero quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum obcaecati numquam quia mollitia officia, perferendis inventore hic iste omnis soluta porro nulla provident nihil totam impedit nobis ipsa quo quod odio aperiam cum pariatur beatae. Asperiores sapiente ipsum et, dolorum corporis reiciendis quis modi nulla eaque, natus libero error consequatur? Aliquid omnis sit doloremque tempora! Perspiciatis neque, cumque, eius deserunt mollitia ullam rem expedita quas recusandae natus soluta a nostrum similique voluptates quibusdam minima, corporis voluptatum ex nesciunt sed vitae eum quasi corrupti! Libero delectus quis ducimus, quidem aliquam excepturi quo, quisquam fugit, animi eos voluptates. Accusamus, doloribus explicabo.</p>
+    
+    <hr>
+    
+    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio in placeat, saepe voluptas reprehenderit suscipit distinctio veniam! Voluptatibus, placeat assumenda.</p>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // For 
+        console.log('For Loop')
+        for(let i = 0; i<=10;i++){
+            console.log(i)
+        }
+        
+        // ForEach 
+        
+        console.log('ForEach Loop')
+        let arr = [1,2,3,4,5,6,7,8,9,10]
+
+        arr.forEach(e => {
+            console.log(e) 
+        });
+        
+        // For in 
+        
+        console.log('For In Loop')
+        for(let a in arr){
+            console.log(a)
+        }
+        
+        console.log('For Of Loop')
+
+        // For of 
+        const person = [
+        {
+            name : 'ABC',
+            age: 23
+        },
+        {
+            name : 'DEF',
+            age: 23
+        },
+        {
+            name : 'ABC',
+            age: 34
+        },
+        {
+            name : 'ABC',
+            age: 56
+        },
+        {
+            name : 'ABC',
+            age: 67
+        }
+        ]
+        for(let b of person){
+            console.log(b)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Query</title>
+</head>
+<style>
+    .home{
+        overflow: auto;
+    }
+
+    #para{
+        margin-left: 4px;
+    }
+    .btn{
+        float: none;
+        width: auto;
+    }
+
+    .menulist{
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuitem{
+        background-color: gray;
+        border: 1px solid rgb(54, 77, 204);
+        border-radius: 5px;
+        list-style-type: none;
+        margin: 4px;
+        padding: 2px;
+    }
+
+    /* @media screen and (max-width: 480px){
+        .btn{
+            width: 200px;
+            float: left;
+        }
+        #para{
+            margin-left: 216px; 
+        }  
+    }
+
+    @media screen and (max-width: 820px){
+        #para h1{
+            font-size: 50px;
+        }
+        #para p{
+            color: blueviolet;
+        }
+        
+    }
+    @-moz-media screen and (max-width: 820px){
+        #para h1{
+            font-size: 50px;
+        }
+        #para p{
+            color: blueviolet;
+        }
+        
+    } */
+
+    @media screen and (max-width: 1000px) {
+        #para h1{
+            font-size: 45px;
+        }
+        #menulist li{
+            background-color: aqua;
+        }
+        
+    }
+    @media screen and (max-width: 820px) {
+        #para h1{
+            font-size: 65px;
+        }
+        #menulist li{
+            background-color: rgb(55, 0, 255);
+        }
+        
+    }
+    @media screen and (max-width: 480px) {
+        #para h1{
+            font-size: 65px;
+        }
+        .btn{
+            width: 200px;
+            float: left;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        #para h1{
+            font-size: 65px;
+        }
+        .btn{
+            width: 200px;
+            float: left;
+        }
+    }
+  
+   
+
+</style>
+<body >
+    <div class="home">
+        <div class="btn">
+            <ul id="menulist">
+                <li class="menuitem">Menu-item 1</li>
+                <li class="menuitem">Menu-item 2</li>
+                <li class="menuitem">Menu-item 3</li>
+                <li class="menuitem">Menu-item 4</li>
+                <li class="menuitem">Menu-item 5</li>
+            </ul>
+        </div>
+        <div id="para">
+            <h1>Resize the browser window to see the effect!</h1>
+            
+            <p>The media query will apply if the media type is screen and the viewport is 480px wide or wider.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

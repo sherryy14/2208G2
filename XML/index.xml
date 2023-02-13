@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE studentinfo [
+    <!ELEMENT studentinfo (student,student,student)>
+    <!ELEMENT student (fname,lname,email,city)>
+    <!ELEMENT fname (#PCDATA)>
+    <!ELEMENT lname (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT city (#PCDATA)>
+]>
+
+<!-- this is a comment -->
+<studentinfo>
+    <student>
+        <fname>Wajeeh</fname>
+        <lname>Khan</lname>
+        <email>wajeeh@gmail.com</email>
+        <city>Karachi</city>
+    </student>
+    <student>
+        <fname>Wajeeh</fname>
+        <lname>Khan</lname>
+        <email>wajeeh@gmail.com</email>
+        <city>Karachi</city>
+    </student>
+    <student>
+        <fname>Wajeeh</fname>
+        <lname>Khan</lname>
+        <email>wajeeh@gmail.com</email>
+        <city>Karachi</city>
+    </student>
+</studentinfo>

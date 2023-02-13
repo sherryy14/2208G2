@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<style>
+    form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    input[type='submit'],input[type='reset']{
+        align-self: center;
+        width: 20%;
+    }
+
+
+    body{
+        background: url(hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <h1>Forms</h1> 
+
+
+
+    <form action="" method="get">
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name" minlength="3" autofocus> 
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your last name" minlength="3" required>  
+        Email
+        <input type="email" name="" id="" autocomplete="off">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" required min="1"> 
+
+        <label for="female">Gender</label> <br>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" value="Male" id="male">
+        </div>
+       <div>
+        <label for="">Female</label>
+        <input type="radio" name="Gender" value="Female" id="female"> 
+       </div> <br>
+
+        <label for="">Phone Number:</label>
+       <div>
+        <input type="tel" size="2"  required="true"  placeholder="Code" pattern="[+0-9]{1,2}" > 
+        <input type="tel" min="7" max="12" placeholder="Enter your phone">
+       </div>
+        <br>
+        <input type="password" name="password" id="" placeholder="password">
+
+
+        <input type="email" name="email" autocomplete="on">
+       <!-- <button>Submit</button> -->
+       <input type="submit" value="Submit">
+       <input type="reset" value="Reset">
+       
+
+
+
+
+    </form>
+
+
+</body>
+</html>

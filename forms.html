@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+        <!-- For : enter id of the input field  which you want to bind. id and for should be same  -->
+        <label for="name">Name</label>
+        <!-- name attribute is used for entering data in database -->
+      <input type="text" name="firstName" id="name" placeholder="Enter Your Name" minlength="3" /> <br>
+
+      Gender <br />
+    <!-- Name should be same for radio button so it will select only one option at a  time -->
+      <input type="radio" name="Gender" value="male" id="male"  />
+      <label for="male">  Male </label><br />
+      <input type="radio" name="Gender" value="female" id="female" />
+      <label for="female"> Female</label>
+      
+      
+
+      <label for="a">  Cricket</label><br />
+      <!-- value attribute is for database in which we have to define value which will store in database -->
+    <input type="checkbox" name="hobbies" value="Cricket" id="a"> 
+    <input type="checkbox" name="hobbies" id="">Football  
+<select name="" id=""> 
+    
+    <option value="">BSC</option>
+    <option value="">BSCS</option>
+    <option value="1" selected >MCS</option>
+    <option value="">SE</option>
+</select>    
+
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+<button>Submit</button>
+</form>
+</body>
+</html>

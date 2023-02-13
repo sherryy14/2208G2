@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+   
+/*    table{
+        border-collapse: collapse;
+       
+        background-color: rgb(207, 211, 211);
+        width: 100vw;
+        height: 200px;
+    }
+
+    table,td{
+        border:1px solid rgb(187, 187, 238);
+    }
+
+    th{
+        height: 30%;
+        background-image: url("hero.jpg");
+        background-attachment: fixed; 
+        color: whitesmoke;
+        cursor: pointer;
+        text-shadow: -2px -2px 3px black;
+    }
+
+    td{
+        border-radius: 5px;
+    }
+
+    tr:nth-child(even){
+        background-color: rgb(238, 221, 197);
+    } */
+
+    table{
+        /* border: 2px solid black; */
+        width: 100%;
+    }
+
+    td{
+        /* border: 2px solid black; */
+    }
+    th{
+        background-image: url("hero.jpg");
+        height: 50px;
+        color: wheat;
+    }
+    tr:nth-child(even){
+        background-color: coral;
+    }
+
+    h1{
+        text-shadow: -2px 2px 0 red;
+    }
+
+
+</style>
+<body>
+
+ 
+    <h1>Company Info</h1>
+
+    <table style="text-align: center;">
+        <tr> 
+            <!-- Row 1  -->
+            <th colspan="3">HR</th>
+            <th colspan="2">Admin</th>
+            <th colspan="2">Faculty</th>
+        </tr>
+        <tr>
+            <!-- Row 2  -->
+            <!-- HR Rows name  -->
+            <td>Name</td>
+            <td>Age</td>
+            <td>Qaulification</td>
+            <!-- Admin rows name  -->
+            <td>Name</td>
+            <td>Location</td>
+            <!-- Faculty rows name  -->
+            <td>Name</td>
+            <td>Qaulification</td>
+        </tr>
+        <!-- Row 3  -->
+        <tr>
+            <!-- HR Info  -->
+            <td>Smith</td>
+            <td>43</td>
+            <td>MBA</td>
+            <!-- Admin Info  -->
+            <td>David</td>
+            <td>Liyari</td>
+            <!-- Faculty Info  -->
+            <td>Kallis</td>
+            <td>Data Scientist</td>
+        </tr>
+        <tr>
+            <!-- HR Info  -->
+            <td>Kohli</td>
+            <td>33</td>
+            <td>Cricketer</td>
+            <!-- Admin Info  -->
+            <td>Rahul</td>
+            <td>Mumbai</td>
+            <!-- Faculty Info  -->
+            <td>Arshdeep</td>
+            <td>Winner</td>
+        </tr>
+        
+    </table>
+
+    <hr>
+    <h1>Audio</h1>
+
+    <audio controls>
+
+        <source src="/multimedia/music.mp3" >
+     
+      </audio>
+
+      <br>
+    <video controls autoplay muted autobuffer>
+        <source src="/multimedia/video.mp4" type="">
+    </video>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pTCgWVjB6UE?start=145" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+
+    <iframe src="Contact.html" frameborder="0"></iframe>
+</body>
+</html>

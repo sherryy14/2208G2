@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJS</title>
+</head>
+<style>
+    #data{
+        background: #000;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .cards img{
+        width: 300px;
+        height: 300px;
+    }
+    .cards span{
+        display: block;
+    }
+</style>
+<body>
+    <input type="text" id="oldprice" placeholder="Old Price">
+    <input type="text" id="newprice" placeholder="New Price">
+    <button id="btn">Check</button>
+    <div id="data"></div>
+    <div class="cards">
+        <h1></h1>
+        <h2></h2>
+        <p></p>
+        <span></span>
+        <img src="" alt="">
+    </div>
+    <div class="cards">
+        <h1></h1>
+        <h2></h2>
+        <p></p>
+        <span></span>
+        <img src="" alt="">
+    </div>
+    <div class="cards">
+        <h1></h1>
+        <h2></h2>
+        <p></p>
+        <span></span>
+        <img src="" alt="">
+    </div>
+    <script>
+        document.getElementById('btn').addEventListener('click',()=>{
+            let oldPrice = document.getElementById('oldprice').value;
+            let newPrice = document.getElementById('newprice').value;
+
+            switch(true){
+                case (oldPrice > newPrice):
+                    document.getElementById('data').innerHTML = 
+                    `${oldPrice} zyada hai ${newPrice} to faida kya`;
+
+                    break;
+                case (oldPrice < newPrice):
+                    document.getElementById('data').innerHTML = 
+
+                    `${oldPrice} kam hai ${newPrice} to faida hi faida`;
+
+                    break;
+                default:
+                document.getElementById('data').innerHTML = 'Promotion is good'
+
+            }
+        })
+
+        let food = [
+            {
+                brand: "KFC",
+                title: "Burger",
+                desc: "Burger description",
+                price: 999,
+                img: 'https://d1ralsognjng37.cloudfront.net/521bd416-525f-48d5-9ac7-68dcbbe24678.jpeg'
+            },
+            {
+                brand: "MCD",
+                title: "Burger",
+                desc: "Burger description",
+                price: 929,
+                img: 'https://d1ralsognjng37.cloudfront.net/521bd416-525f-48d5-9ac7-68dcbbe24678.jpeg'
+            },
+            {
+                brand: "B Lab",
+                title: "Burger",
+                desc: "Burger description",
+                price: 949,
+                img: 'https://d1ralsognjng37.cloudfront.net/521bd416-525f-48d5-9ac7-68dcbbe24678.jpeg'
+            }
+        ]
+            let j = food.length
+        for(let i = 0; i < j ; i++){
+            // let foodCard = document.getElementsByClassName('cards')[i];
+            // foodCard.innerHTML = 
+             let brandName = document.getElementsByTagName('h1')[i];
+             let titleName = document.getElementsByTagName('h2')[i];
+             let decsName = document.getElementsByTagName('p')[i];
+             let prodPrice = document.getElementsByTagName('span')[i];
+             let image = document.getElementsByTagName('img')[i];
+
+             brandName.innerHTML  = food[i].brand
+             titleName.innerHTML  = food[i].title
+             decsName.innerHTML  = food[i].desc
+             prodPrice.innerHTML  = food[i].price
+             image.src = food[i].img
+
+        }
+
+        let whl = 0
+        while(whl <10){
+            console.log(whl)
+            whl = 10
+        }
+
+    </script>
+</body>
+</html>

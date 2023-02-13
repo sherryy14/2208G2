@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+    <student>
+        <name>Kashan</name>
+        <age>23</age>
+        <section>A</section>
+        <time>19:23:23</time>
+        <img>http://www.creativepictures.com/gallery/flower.gif</img>
+    </student>
+    <student>
+        <name>Kashan</name>
+        <age>23</age>
+        <section>A</section>
+        <time>19:23:23</time>
+        <img>image.jpg</img>
+    </student>
+    <student>
+        <name>Kashan</name>
+        <age>23</age>
+        <section>A</section>
+        <time>19:23:23</time>
+        <img>image.jpg</img>
+    </student>
+</class>

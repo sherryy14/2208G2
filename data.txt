@@ -1,0 +1,5 @@
+<h1> External Data </h1>
+
+<p id='para'> The jQuery load() method is a simple, but powerful AJAX method. 
+Load() method loads data from a server and puts the returned data into the selected element.
+</p>

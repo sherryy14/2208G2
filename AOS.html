@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+    .div{
+        height: 1000px;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+    }
+    .item > div{
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+        background-color: black;
+    }
+
+</style>
+<body>
+    <nav class="nav"></nav>
+    
+    <div class="div"></div>
+
+    <div class="item">
+        <div data-aos="fade-right"></div>
+        <div data-aos="fade-down"></div>
+        <div data-aos="fade-left"></div>
+    </div>
+    <div class="div"></div>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000
+      });
+    </script>
+</body>
+</html>

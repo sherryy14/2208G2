@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="food.xsl" type="text/xsl"?>
+<!-- <?xml-stylesheet href="file.css" type="text/css"?> -->
+<menu>
+    <item category='Fast Food'>
+        <food>Burger</food>
+        <price>121</price>
+        <rating>5</rating>
+    </item>
+    <item category='Italian Food'>
+        <food>Pizza</food>
+        <price>121</price>
+        <rating>4.9</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>45</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>456</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>10</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>12</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>454</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>544</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>123</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>5</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>785</price>
+        <rating>3</rating>
+    </item>
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>675</price>
+        <rating>3</rating>
+    </item>
+   
+    <item category='Desi Food'>
+        <food>Biryani</food>
+        <price>54</price>
+        <rating>3</rating>
+    </item>
+</menu>

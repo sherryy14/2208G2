@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var text = `{
+            "name": "Abc",
+            "color": {
+                "red": [23, 45, 67],
+                "blue": [23, 45, 67],
+                "black": [23, 45, 67],
+                "gray": {
+
+                }
+            },
+            "age": 34,
+            "att": true,
+            "abc": null
+        }`
+        var json_ = JSON.parse(text)// Text/String  to JSON Format 
+        console.log(json_)
+        console.log(JSON.stringify(json_)) // JSON to Text/String 
+
+// `Name: ${color.name}`
+// ("Name"+ color.name)
+        var std = {
+            "students":
+                [
+                    {
+                        "name": "Steve",
+                        "age": "20",
+                        "city": "Denver"
+                    },
+                    {
+                        "name": "Bob",
+                        "age": "21",
+                        "city": "Sacramento"
+                    }
+                ]
+        }
+        console.log(std.students[1].name)
+        var prob =
+        {
+"problems": [{
+    "Diabetes": [{
+    "medications": [{
+    "medicationsClasses": [{
+             "className": [{
+             "associatedDrug": [{
+                                    "name": "Asprin", "dose": "sone ky bad", "strength": "500 mg"
+                                }]
+                            }]
+                        }]
+                    }]
+                }]
+            }]
+        }
+        console.log(prob.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name)
+        console.log(prob.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].dose)
+        console.log(prob.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].strength)
+
+    </script>
+</body>
+
+</html>

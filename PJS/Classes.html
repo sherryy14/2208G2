@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+     class Person{
+        // constructor Method 
+        constructor(name,age,edu){
+            this.personName = name
+            this.personAge = age
+            this.edu = edu
+        }
+
+        // Instance Method 
+
+        PersonBioData(){
+            console.log(`Person Name: ${this.personName} Person Age: ${this.personAge} Person Education: ${this.edu} `)
+        }
+     }
+
+     class Emp extends Person{
+        // Must call super constructor in derived class before accessing 'this' or returning from derived constructor
+        constructor(name,age,edu,dept){
+            super(name,age,edu)
+            this.deptmnt = dept
+        }
+
+        EmpBioData(){
+            console.log(`Person Name: ${this.personName} Person Age: ${this.personAge} Person Education: ${this.edu} Person Dept ${this.deptmnt} `)
+        }
+
+     }
+
+     let emp1 = new Emp('ABC',23,"MCS","IT")
+     emp1.EmpBioData()
+    //  let person1 = new Emp("Wajeeh",32,"Full Stack Dev")
+    //  let person2 = new Person("Qaiser",65,"Full Stack Dev")
+    //  person1.PersonBioData()
+    //  person2.PersonBioData()
+
+    </script>
+</body>
+</html>

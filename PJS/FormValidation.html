@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: jackInTheBox;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 5s;
+        /* don't forget to set a duration! */
+    }
+
+    .container>input {
+        margin: 10px 0;
+        width: 300px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    #btn {
+        padding: 10px 15px;
+        background-color: brown;
+        border-radius: 10px;
+        color: aliceblue;
+        font-size: 16px;
+    }
+
+    #wrong {
+        width: 310px;
+        color: red;
+        display: none;
+    }
+    #wrongpass {
+        width: 310px;
+        text-align: center;
+        
+        display: none;
+    }
+
+    #correct {
+        display: none;
+        color: green;
+    }
+
+    .my-element {
+        display: inline-block;
+        margin: 0 0.5rem;
+
+        animation: shakeX;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 5s;
+        /* don't forget to set a duration! */
+    }
+    .my-element1 {
+        display: inline-block;
+        margin: 0 0.5rem;
+
+        animation: heartBeat;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 3s;
+        /* don't forget to set a duration! */
+    }
+  
+</style>
+
+<body>
+
+
+    <div class="container">
+        <input type="text" id="uname" placeholder="User Name">
+        <p id="wrong">Username must contain 1 uppercase character, 1 lowercase character, 1 digit, 1 special character.
+        </p>
+        <p id="correct">Mubarak Ho!</p>
+        <input type="email" name="" id="email" placeholder="Email">
+        <input type="password" name="" id="pass" placeholder="Password">
+        <p id="wrongpass">
+        </p>
+        <button id="btn">Submit</button>
+    </div>
+
+    <script>
+        // console.log(btn) // id can be treated as global variable
+        // uname.addEventListener('keyup',()=>{
+
+        //     let userInput = uname.value;
+        // console.log(userInput)
+        // userInput = ''
+        // })
+        btn.addEventListener('click', () => {
+            // User Name Testing 
+            let userInput = uname.value;
+            let userReg = /[A-Z]{1,2}[a-z]{1,}[0-9]{1,5}[\!\@\#\$\%\^\&\*]{1}/
+
+            let userTest = userReg.test(userInput)
+            console.log(userTest)
+            if (userTest) {
+                uname.style.border = "2px solid green";
+                correct.style.display = "block";
+                wrong.style.display = "none";
+
+
+            } else {
+                correct.style.display = "none";
+                uname.style.border = "2px solid red";
+                wrong.style.display = "block";
+                let unameAnimate = uname.classList
+                unameAnimate.add('my-element')
+            }
+            uname.value = '';
+
+            // Password Testing 
+
+            let passInp = pass.value;
+            let passRegex = /[A-Z]{1}[a-z]{7,20}[\!\@\#\$\%\^\&\*\.\,\+\-\_][0-9]{2,10}/
+
+            let passTest = passRegex.test(passInp)
+            console.log(passTest)
+            if(passTest){
+                pass.style.border = "2px solid green";
+                wrongpass.innerText = 'Success'
+                wrongpass.style.display = "block";
+                wrongpass.style.color = "green";
+                let passAnimate = pass.classList
+                passAnimate.add('my-element1')
+
+
+            }else{
+                pass.style.border = "2px solid red";
+                wrongpass.innerText = 'Failed'
+                wrongpass.style.display = "block";
+                wrongpass.style.color = "red";
+
+            }
+
+            pass.value = ''
+
+
+        });
+        // let val = "Hello World"
+        // let reg = /worlD/i
+
+        // let  ans = val.search(reg)
+
+        // console.log(ans)
+
+        // let regTest = /Sherry/i
+
+        // let valName = "This is sherry"
+
+        // let opt = regTest.test(valName)
+        // console.log(opt)
+
+        // if(opt){
+        //     alert('Valid')
+        // }else{
+        //     alert('Invalid')
+
+        // }
+
+    </script>
+</body>
+
+</html>
